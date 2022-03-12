@@ -2,7 +2,7 @@ import PrivateRoute from "../../routes/PrivateRoute";
 import PublicRoute from "../../routes/PublicRoute";
 
 describe('pruebas a routes', () => {
-    // verificar rutas privadas
+    // verificar rutas publicas
     test('valdidar ruta publica', () => {
         const isAuthenticated = <PublicRoute isAuthenticated />
         const props = !isAuthenticated.props
