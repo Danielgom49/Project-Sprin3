@@ -14,8 +14,8 @@ export const editOpinionAsync = (name, opinion) => {
         })
         const docRef = doc(db, "opinions", id)
         await updateDoc(docRef, opinion)
-            .then(() => listOpinionSync(opinion))
-        dispatch(listOpinionSync(opinion))
+            .then(() => editOpinionSycn(opinion))
+        dispatch(listOpinionAsync())
     }
 }
 
